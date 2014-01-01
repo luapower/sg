@@ -8,8 +8,6 @@ local GLSG = require'sg_gl'
 require'sg_gl_mesh'
 require'sg_gl_obj'
 
-local imagefile = require'imagefile'
-
 local main = winapi.Window{
 	autoquit = true,
 	visible = false,
