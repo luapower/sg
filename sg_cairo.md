@@ -1,7 +1,8 @@
 ---
-project: sg
-title:   sg_cairo
-tagline: cairo scene graph render
+project:  sg
+title:    sg_cairo
+tagline:  cairo scene graph render
+category: 2D Graphics
 ---
 
 v1.0

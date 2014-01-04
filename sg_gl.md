@@ -1,7 +1,8 @@
 ---
-project: sg
-title:   sg_gl
-tagline: OpenGL scene graph render
+project:  sg
+title:    sg_gl
+tagline:  OpenGL scene graph render
+category: 3D Graphics
 ---
 
 v1.0

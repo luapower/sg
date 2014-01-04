@@ -1,7 +1,7 @@
 ---
-project: sg
-title:   sg_gl_shape
-tagline: OpenGL scene graph shape objects
+project:  sg
+title:    sg_gl_shape
+tagline:  OpenGL scene graph shape objects
 ---
 
 v1.0
