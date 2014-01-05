@@ -4,8 +4,6 @@ title:    sg_gl_shape
 tagline:  OpenGL scene graph shape objects
 ---
 
-v1.0
-
 ## `require'sg_gl_shape'`
 
 Extends [sg_gl](sg_gl.html) to render shape objects.

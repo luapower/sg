@@ -4,8 +4,6 @@ title:   sg_gl_mesh
 tagline: OpenGL scene graph mesh objects
 ---
 
-v1.0
-
 ## `require'sg_gl_mesh'`
 
 Extends [sg_gl](sg_gl.html) to render mesh type objects.

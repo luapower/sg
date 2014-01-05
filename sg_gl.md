@@ -2,10 +2,7 @@
 project:  sg
 title:    sg_gl
 tagline:  OpenGL scene graph render
-category: 3D Graphics
 ---
-
-v1.0
 
 ## `local SG = require'sg_gl'`
 

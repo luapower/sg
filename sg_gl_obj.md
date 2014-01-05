@@ -4,8 +4,6 @@ title:   sg_gl_obj
 tagline: OpenGL scene graph wavefront obj objects
 ---
 
-v1.0
-
 ## `require'sg_gl_obj'`
 
 Extends [sg_gl](sg_gl.html) to render obj type objects. Uses [obj_loader](obj_loader.html)

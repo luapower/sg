@@ -5,8 +5,6 @@ tagline:  cairo scene graph render
 category: 2D Graphics
 ---
 
-v1.0
-
 ## `local SG = require'sg_cairo'`
 
 ## `local sg = SG:new(surface[,cache])`
