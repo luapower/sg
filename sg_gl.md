@@ -1,7 +1,7 @@
 ---
-project:  sg
-title:    sg_gl
-tagline:  OpenGL scene graph render
+project: sg
+title:   sg_gl
+tagline: OpenGL scene graph rendering
 ---
 
 ## `local SG = require'sg_gl'`

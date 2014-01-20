@@ -1,7 +1,7 @@
 ---
-project:  sg
-title:    sg_cairo
-tagline:  cairo scene graph render
+project: sg
+title:   sg_cairo
+tagline: cairo scene graph rendering
 ---
 
 ## `local SG = require'sg_cairo'`

@@ -1,7 +1,7 @@
 ---
 project:  sg
 title:    sg_gl_shape
-tagline:  OpenGL scene graph shape objects
+tagline:  OpenGL scene graph shapes
 ---
 
 ## `require'sg_gl_shape'`

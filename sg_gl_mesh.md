@@ -1,7 +1,7 @@
 ---
 project: sg
 title:   sg_gl_mesh
-tagline: OpenGL scene graph mesh objects
+tagline: OpenGL scene graph meshes
 ---
 
 ## `require'sg_gl_mesh'`

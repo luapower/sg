@@ -1,12 +1,12 @@
 ---
 project: sg
 title:   sg_gl_obj
-tagline: OpenGL scene graph wavefront obj objects
+tagline: OpenGL scene graph OBJ meshes
 ---
 
 ## `require'sg_gl_obj'`
 
-Extends [sg_gl](sg_gl.html) to render obj type objects. Uses [obj_loader](obj_loader.html)
+Extends [sg_gl](sg_gl.html) to render wavefront OBJ files. Uses [obj_loader](obj_loader.html)
 to parse obj files into [sg_gl_mesh mesh objects](sg_gl_mesh.html).
 
 ## Wavefront obj objects
