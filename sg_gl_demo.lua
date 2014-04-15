@@ -1,7 +1,6 @@
 local glue = require'glue'
 local winapi = require'winapi'
 require'winapi.windowclass'
-require'winapi.messageloop'
 require'winapi.wglpanel'
 local GLSG = require'sg_gl'
 require'sg_gl_shape'

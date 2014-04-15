@@ -1,5 +1,5 @@
 local winapi = require'winapi'
-require'winapi.messageloop'
+require'winapi.windowclass'
 local SGPanel = require'winapi.cairosgpanel'
 local cairo = require'cairo'
 
