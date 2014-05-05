@@ -8,7 +8,7 @@ for k,f in pairs(SG) do
 	if type(f) == 'function' then
 		TSG[k] = function(self,...)
 			local t,n = {...}, select('#',...)
-			for i=1,n do t[i] = tostring(pp.pformat(t[i], nil, {})) end
+			for i=1,n do t[i] = tostring(pp.format(t[i], nil, {})) end
 			print(k..'('..table.concat(t, ', ')..')')
 			return f(self,...)
 		end
