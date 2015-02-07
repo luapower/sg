@@ -163,8 +163,7 @@ and only the transformation matrix and clipping area are contextual._
 
 ~~~
 
-See the [path](path.html) module for how to specify path_objects.
+See the [path] module for how to specify path_objects.
 
 ----
-See also: [sg_gl](sg_gl.html)
-
+See also: [sg_gl]

@@ -6,8 +6,8 @@ tagline: OpenGL scene graph OBJ meshes
 
 ## `require'sg_gl_obj'`
 
-Extends [sg_gl](sg_gl.html) to render wavefront OBJ files. Uses [obj_loader](obj_loader.html)
-to parse obj files into [sg_gl_mesh mesh objects](sg_gl_mesh.html).
+Extends [sg_gl] to render wavefront OBJ files. Uses [obj_loader]
+to parse obj files into [sg_gl_mesh mesh objects][sg_gl_mesh].
 
 ## Wavefront obj objects
 
@@ -22,5 +22,4 @@ to parse obj files into [sg_gl_mesh mesh objects](sg_gl_mesh.html).
 ~~~
 
 ----
-See also: [sg_gl_mesh](sg_gl_mesh.html), [obj_loader](obj_loader.html)
-
+See also: [sg_gl_mesh], [obj_loader]

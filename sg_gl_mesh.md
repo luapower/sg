@@ -6,7 +6,7 @@ tagline: OpenGL scene graph meshes
 
 ## `require'sg_gl_mesh'`
 
-Extends [sg_gl](sg_gl.html) to render mesh type objects.
+Extends [sg_gl] to render mesh type objects.
 
 ## Mesh objects
 
@@ -120,7 +120,7 @@ An IBO can also be partitioned so that different contiguous segments of it can b
 
 ## Textures
 
-Textures can be either [image files](imagefile.html) or [cairo scene graphs](sg_cairo.html).
+Textures can be either [image files][imagefile] or [cairo scene graphs][sg_cairo].
 
 ----
-See also: [sg_gl_shape](sg_gl_shape.html), [sg_gl_obj](sg_gl_obj.html)
+See also: [sg_gl_shape], [sg_gl_obj]

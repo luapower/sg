@@ -28,7 +28,7 @@ Free the render and any associated resources.
 
 ## Extensions
 
-  * [sg_gl_mesh](sg_gl_mesh.html)
-  * [sg_gl_shape](sg_gl_shape.html)
-  * [sg_gl_obj](sg_gl_obj.html)
-  * [sg_gl_debug](sg_gl_debug.html)
+  * [sg_gl_mesh]
+  * [sg_gl_shape]
+  * [sg_gl_obj]
+  * [sg_gl_debug]
