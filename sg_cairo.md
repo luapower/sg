@@ -6,25 +6,27 @@ tagline: cairo scene graph rendering
 
 ## `local SG = require'sg_cairo'`
 
-## `local sg = SG:new(surface[,cache])`
+Rendering of cairo 2D scene graph objects.
+
+### `SG:new(surface[,cache]) -> sg`
 
 Create a new scene graph renderer that can draw scene graph objects on a cairo surface. A cache object can be passed
 so you can share cached resources like fonts and images with other renderers, otherwise a private cache object will be created.
 
-## `sg:render(object)`
+### `sg:render(object)`
 
 Render a scene graph object on the cairo surface of the renderer.
 
-## `sg:preload(object)`
+### `sg:preload(object)`
 
 Preload a scene graph object. Loads images and fonts into the cache.
 
-## `sg:measure(object) -> x1,y1,x2,y2`
+### `sg:measure(object) -> x1,y1,x2,y2`
 
 Compute the bounding box of the object in device coordinates.
 _Note that the box is wrong for strokes with width greater than 1 - this may be a cairo bug._
 
-## `sg:hit_test(x, y, object) -> {object1,...}`
+### `sg:hit_test(x, y, object) -> {object1,...}`
 
 Hit-test a point on a scene graph. Returns all hit objects, from the outermost to innermost.
 
@@ -163,7 +165,5 @@ and only the transformation matrix and clipping area are contextual._
 
 ~~~
 
-See the [path] module for how to specify path_objects.
+See [path2] for how to specify path_objects.
 
-----
-See also: [sg_gl]

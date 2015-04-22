@@ -20,6 +20,3 @@ to parse obj files into [sg_gl_mesh mesh objects][sg_gl_mesh].
   },
 }
 ~~~
-
-----
-See also: [sg_gl_mesh], [obj_loader]

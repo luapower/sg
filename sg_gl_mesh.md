@@ -122,5 +122,3 @@ An IBO can also be partitioned so that different contiguous segments of it can b
 
 Textures can be either [image files][imagefile] or [cairo scene graphs][sg_cairo].
 
-----
-See also: [sg_gl_shape], [sg_gl_obj]

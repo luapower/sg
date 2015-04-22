@@ -22,6 +22,3 @@ Internally, the shape description is converted into a [mesh object][sg_gl_mesh] 
 
 <mode> = see sg_gl_mesh for available modes.
 ~~~
-
-----
-See also: [sg_gl_mesh]
