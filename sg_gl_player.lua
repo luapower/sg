@@ -54,7 +54,6 @@ function panel:on_render()
 end
 
 function player:play()
-	player.
 	main:init()
 	os.exit(winapi.MessageLoop())
 end
