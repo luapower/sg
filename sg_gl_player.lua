@@ -7,32 +7,43 @@ local GLSG = require'sg_gl'
 require'sg_gl_mesh'
 require'sg_gl_obj'
 
-local main = winapi.Window{
-	autoquit = true,
-	visible = false,
-}
+local function init()
+	local main = winapi.Window{
+		autoquit = true,
+		visible = false,
+	}
 
-local panel = winapi.WGLPanel{
-	anchors = {left = true, top = true, right = true, bottom = true},
-	visible = false,
-}
+	local panel = winapi.WGLPanel{
+		anchors = {left = true, top = true, right = true, bottom = true},
+		visible = false,
+	}
 
-function main:init()
-	panel.w = self.client_w
-	panel.h = self.client_h
-	panel.parent = self
-	panel:init(self)
-	panel.visible = true
-	self.visible = true
-	panel:settimer(1/60, panel.invalidate)
-end
+	function main:init()
+		panel.w = self.client_w
+		panel.h = self.client_h
+		panel.parent = self
+		panel:init(self)
+		panel.visible = true
+		self.visible = true
+		panel:settimer(1/60, panel.invalidate)
+	end
 
-function panel:init()
-	self.sg = GLSG:new()
-end
+	function panel:init()
+		self.sg = GLSG:new()
+	end
 
-function panel:on_destroy()
-	self.sg:free()
+	function panel:on_destroy()
+		self.sg:free()
+	end
+
+	function panel:on_render()
+		viewport.w = self.client_w
+		viewport.h = self.client_h
+		--viewport.camera = {eye = {0,0,0}, center = {0,0,-1}, up = {0,1,0}, rz = -2,
+		--							ax = r + self.cursor_pos.y, ay = r, az = 0 + self.cursor_pos.x}
+		self.sg:render(viewport)
+	end
+
 end
 
 local viewport = {
@@ -45,16 +56,8 @@ local viewport = {
 
 local player = {}
 
-function panel:on_render()
-	viewport.w = self.client_w
-	viewport.h = self.client_h
-	--viewport.camera = {eye = {0,0,0}, center = {0,0,-1}, up = {0,1,0}, rz = -2,
-	--							ax = r + self.cursor_pos.y, ay = r, az = 0 + self.cursor_pos.x}
-	self.sg:render(viewport)
-end
-
 function player:play()
-	main:init()
+	init()
 	os.exit(winapi.MessageLoop())
 end
 
