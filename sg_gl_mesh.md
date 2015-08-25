@@ -1,6 +1,4 @@
 ---
-project: sg
-title:   sg_gl_mesh
 tagline: OpenGL scene graph meshes
 ---
 

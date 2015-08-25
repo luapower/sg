@@ -1,6 +1,4 @@
 ---
-project: sg
-title:   sg_cairo
 tagline: cairo scene graph rendering
 ---
 

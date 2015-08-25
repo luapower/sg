@@ -1,6 +1,4 @@
 ---
-project:  sg
-title:    sg_gl_shape
 tagline:  OpenGL scene graph shapes
 ---
 

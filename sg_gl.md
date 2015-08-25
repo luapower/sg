@@ -1,6 +1,4 @@
 ---
-project: sg
-title:   sg_gl
 tagline: OpenGL scene graph rendering
 ---
 
