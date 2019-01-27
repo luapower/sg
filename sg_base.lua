@@ -1,6 +1,9 @@
 --scene graph mixin: provides shared caching, state synchronization and error reporting.
+
 local glue = require'glue'
 local Cache = require'sg_cache'
+
+if not ... then require'sg_cairo_demo'; return end
 
 local SG = {
 	defaults = {},

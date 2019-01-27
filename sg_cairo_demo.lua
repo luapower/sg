@@ -1,4 +1,5 @@
-local glue = require'glue'
+
+local nw = require'nw'
 local sgc = require'sg_cairo'
 
 local operator_palette = {
@@ -196,20 +197,19 @@ local futurama = {type = 'svg', x = 1400, y = 600, scale = 1.5, file = {path = '
 local ellipse = {type = 'svg', x = 1400, y = 600, scale = 1.5, file = {path = 'media/svg/arcs02.svg'}}
 
 local scene = {
-	type = 'group', y = .5, x = .5, scale = .5,
+	type = 'group', --y = .5, x = .5, scale = .5,
 	{type = 'color', 0, 0, 0, 1}, --background
 	transformations,
 	line_styles,
 	fill_rule,
 	gradients,
-	shapes,
 	operator_palette,
-	measuring_subject,
-	measuring_box,
+	--measuring_subject,
+	--measuring_box,
 	--ellipse,
 	--futurama,
-	tiger,
-	leon,
+	--tiger,
+	--leon,
 }
 
 local function box2rect(x1,y1,x2,y2)
@@ -218,11 +218,13 @@ end
 
 local highlight_stroke = {type = 'color', 1,0,0,1}
 
-local player = require'cplayer'
+local sg = sgc:new()
 
-local sg
-function player:on_render(cr)
-	sg = sg or sgc:new(cr)
+local win = nw:app():window(1200, 900)
+
+function win:repaint()
+	local cr = self:bitmap():cairo()
+	sg:set_cr(cr)
 	sg:render(scene)
 	--[[
 	measuring_box.path = {'rect', box2rect(self:measure(measuring_subject))}
@@ -251,5 +253,5 @@ function player:on_render(cr)
 	]]
 end
 
-player:play()
-
+nw:app():run()
+sg:free()

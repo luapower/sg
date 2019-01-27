@@ -1,5 +1,9 @@
---scene graph for cairo: renders a 2D scene graph on a cairo context.
---some modules are loaded on-demand: look for require() in the code.
+
+--Cairo scene graphs.
+--Written by Cosmin Apreutesei. Public Domain.
+
+if not ... then require'sg_cairo_demo'; return end
+
 local ffi = require'ffi'
 local cairo = require'cairo'
 local glue = require'glue'
@@ -10,12 +14,16 @@ local SG = glue.update({}, BaseSG)
 
 function SG:new(cr, cache)
 	local o = BaseSG.new(self, cache)
-	self.cr = cr --surface:create_context()
+	self.cr = cr
 	return o
 end
 
+function SG:set_cr(cr)
+	self.cr = cr
+	self._draw_path = path_cairo(cr)
+end
+
 function SG:free()
-	self.cr:free()
 	BaseSG.free(self)
 	if self.freetype then self.freetype:free() end
 end
@@ -193,7 +201,8 @@ function SG:pop_group_as_source(state)
 end
 
 function SG:draw_path(path)
-	path_cairo(self.cr, path)
+	self.cr:new_path()
+	self._draw_path(path)
 end
 
 function SG:set_path(e)
@@ -828,7 +837,5 @@ function SG:hit_test(x, y, e)
 	test(e)
 	return elements
 end
-
-if not ... then require'sg_cairo_demo' end
 
 return SG
